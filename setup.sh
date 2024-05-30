@@ -26,3 +26,15 @@ echo "done"
 echo "installing pm2"
     pnpm install pm2 -g
 echo "done"
+
+echo "adding asdf yarn plugin"
+    asdf plugin add yarn
+echo "done"
+
+echo "installing yarn"
+    asdf install yarn latest
+echo "done"
+
+echo "set latest version to system wide version"
+    asdf global yarn latest
+echo "done"
